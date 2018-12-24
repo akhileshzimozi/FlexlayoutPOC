@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexlayoutPOC.Page4">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column" 
+                    x:Name="FlexPanel"
+                    JustifyContent="Center"
+                    AlignItems="Center">
+            <Image Source="tech1"
+                   x:Name="ProfileImage"
+                   FlexLayout.AlignSelf="Center"/>
+
+            <StackLayout x:Name="StackPanel">
+            <Label x:Name="Username" Text="Patrick" FlexLayout.AlignSelf="Center"/>
+            <Label x:Name="Address" Text="Midview City" FlexLayout.AlignSelf="Center"/>
+            <Label x:Name="DOB" Text="12/12/2000" FlexLayout.AlignSelf="Center"/>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

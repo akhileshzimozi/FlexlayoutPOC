@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexlayoutPOC.MenuPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Button Text="SizeChanged" Clicked="Button_Clicked"/>
+            <Button Text="Visual State Manager" Clicked="Button_Clicked_1"/>
+            <Button Text="FlexLayout" Clicked="Button_Clicked_2"/>
+            <Button Text="BoxView" Clicked="Button_Clicked_3"/>
+            <Button Text="Profile" Clicked="Button_Clicked_4"/>
+            <Button Text="Profile Part 2" Clicked="Button_Clicked_5"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

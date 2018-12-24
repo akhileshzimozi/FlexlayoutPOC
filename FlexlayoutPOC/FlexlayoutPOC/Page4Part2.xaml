@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexlayoutPOC.Page4Part2">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column"
+                    BackgroundColor="DarkGray">
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    
+                </Grid.RowDefinitions>
+
+                <BoxView BackgroundColor="LightBlue" />
+                <BoxView BackgroundColor="LightBlue" Grid.Row="1"/>
+                <BoxView BackgroundColor="DarkGray" Grid.Row="2"/>
+                <BoxView BackgroundColor="DarkGray" Grid.Row="3"/>
+
+                <StackLayout Orientation="Horizontal"
+                             Grid.Row="1"
+                             Grid.RowSpan="2"
+                             HorizontalOptions="CenterAndExpand"
+                             >
+                <Image Source="tech2" WidthRequest="200"
+                       HeightRequest="200"
+                       />
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand"
+                             Grid.Row="3">
+                <Label x:Name="Username" TextColor="White" Text="Patrick" />
+                <Label x:Name="Address" TextColor="White" Text="Midview City" />
+                <Label x:Name="DOB" TextColor="White" Text="12/12/2000"/>
+                </StackLayout>
+            </Grid>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FlexlayoutPOC"
+             x:Class="FlexlayoutPOC.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--<Style TargetType="Label">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="Common">
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>-->
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout x:Name="stackPanel" 
+                 >
+        <StackLayout.BackgroundColor>
+            <OnIdiom x:TypeArguments="Color" Tablet="LightBlue" Phone="Red"/>
+        </StackLayout.BackgroundColor>
+        
+        <StackLayout x:Name="HelloPanel">
+            <!--<StackLayout.HorizontalOptions>
+                <OnIdiom x:TypeArguments="LayoutOptions" Tablet="Center" Phone="Start"/>
+            </StackLayout.HorizontalOptions>-->
+            
+        <Label Text="Hello, Left right top bottom" Margin="10,0,0,0"/>
+        <Entry Placeholder="ABC"/>
+        <Button Text="Click"/>
+        </StackLayout>
+        <Image Source="swimmingpool" x:Name="pool">
+            <!--<Image.Aspect>
+                <OnIdiom x:TypeArguments="" Phone="AspectFit" Tablet="AspectFill"/>
+            </Image.Aspect>-->
+        </Image>
+
+
+    </StackLayout>
+    
+</ContentPage>

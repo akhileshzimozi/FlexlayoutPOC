@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexlayoutPOC.Page3">
+    <ContentPage.Content>
+        <ScrollView x:Name="ScrollPanel">
+            <StackLayout x:Name="StackPanel"> 
+                <BoxView BackgroundColor="Accent"
+                         x:Name="AccentBV"/>
+                <BoxView BackgroundColor="Black"
+                         x:Name="BlackBV"/>
+                <BoxView BackgroundColor="Red"
+                         x:Name="RedBV"/>
+                <BoxView BackgroundColor="Beige"
+                         x:Name="BeigeBV"/>
+                <BoxView BackgroundColor="Yellow"
+                         x:Name="YellowBV"/>
+                <BoxView BackgroundColor="Blue"
+                         x:Name="BlueBV"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
